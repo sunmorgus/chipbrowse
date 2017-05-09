@@ -1,0 +1,39 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "suppressTaskName": true,
+    "tasks": [
+        {
+            "taskName": "Dist",
+            "command": "npm",
+            "isBuildCommand": false,
+            "args": [
+                "run",
+                "dist"
+            ],
+            "showOutput": "always",
+            "echoCommand": true
+        },
+        {
+            "taskName": "Pack",
+            "command": "npm",
+            "args": [
+                "run",
+                "pack"
+            ],
+            "showOutput": "always",
+            "echoCommand": true
+        },
+        {
+            "taskName": "HTMLClipboard",
+            "command": "/Users/nicklasdemayo/Library/Mobile\\ Documents/iCloud\\~com\\~gl9\\~markdowns/Documents/.ref/utility/pandoc.sh",
+            "isShellCommand": true,
+            "args": [
+                "${file}"
+            ],
+            "showOutput": "always",
+            "echoCommand": true
+        }
+    ]
+}

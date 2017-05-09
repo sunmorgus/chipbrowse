@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>BAH Zone Local Dev</title>
+	<link rel="stylesheet" href="photon/css/photon.css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="index.css" media="screen" charset="utf-8">
+</head>
+
+<body>
+	<div class="window">
+		<header class="toolbar toolbar-header">
+			<div class="toolbar-actions">
+				<div class="btn-group" style="margin: 3px 5px 5px 5px;">
+					<button class="btn btn-large btn-default">
+                        <span class="icon icon-left"></span>
+                    </button>
+					<button class="btn btn-large btn-default">
+                        <span class="icon icon-right"></span>
+                    </button>
+				</div>
+				<input class="form-control" placeholder="Enter url..." id="url" style="margin: 5px; width: 310px;" />
+				<button class="btn btn-large btn-default" id="go" style="margin: 3px 5px 5px 5px;">
+					<span class="icon icon-play"></span>
+				</button>
+			</div>
+		</header>
+
+		<div class="window-content">
+			<webview id="content" src="https://www.google.com/" style="display:inline-flex; width:480px; height:250px" useragent="Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_4 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10B350 Safari/8536.25"></webview>
+		</div>
+	</div>
+	<script type="text/javascript" src="browser.js"></script>
+</body>
+
+</html>
