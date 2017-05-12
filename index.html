@@ -9,7 +9,10 @@
 
 <body>
 	<div class="window">
-		<header class="toolbar toolbar-header">
+		<div class="window-content">
+			<webview id="content" src="https://www.google.com/" style="display:inline-flex; width:480px; height:250px" useragent="Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_4 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10B350 Safari/8536.25"></webview>
+		</div>
+		<footer class="toolbar toolbar-footer">
 			<div class="toolbar-actions">
 				<div class="btn-group" style="margin: 3px 5px 5px 5px;">
 					<button class="btn btn-large btn-default">
@@ -24,11 +27,7 @@
 					<span class="icon icon-play"></span>
 				</button>
 			</div>
-		</header>
-
-		<div class="window-content">
-			<webview id="content" src="https://www.google.com/" style="display:inline-flex; width:480px; height:250px" useragent="Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_4 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10B350 Safari/8536.25"></webview>
-		</div>
+		</footer>
 	</div>
 	<script type="text/javascript" src="browser.js"></script>
 </body>
