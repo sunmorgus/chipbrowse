@@ -19,7 +19,7 @@ function createMainWindow() {
 	const win = new electron.BrowserWindow({
 		width: 480,
 		height: 272,
-		frame: false
+		frame: true
 	});
 
 	win.loadURL(`file://${__dirname}/index.html`);
@@ -36,5 +36,6 @@ app.on('activate', () => {
 
 app.on('ready', () => {
 	mainWindow = createMainWindow();
+	mainWindow.setFullScreen(true);
 	// mainWindow.openDevTools({ mode: 'detach' });
 });

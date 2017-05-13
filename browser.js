@@ -11,3 +11,11 @@ webview.addEventListener('dom-ready', () => {
         webview.loadURL(url);
     };
 });
+
+webview.addEventListener('did-start-loading', () => {
+	document.getElementById('url').value = 'Loading...';
+});
+
+webview.addEventListener('did-stop-loading', () => {
+	document.getElementById('url').value = webview.getURL();
+});
